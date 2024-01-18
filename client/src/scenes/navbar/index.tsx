@@ -16,7 +16,7 @@ const Navbar = (props: Props) => {
         {/* LEFT SIDE */}
         <FlexBetween gap="0.75rem">
             <QueryStatsIcon sx={{ fontSize: "28px"}}/>
-            <Typography variant="h4" fontSize="16px">Market Oracle</Typography>
+            <Typography variant="h4" fontSize="16px">Finance Oracle</Typography>
         </FlexBetween>
 
         {/* RIGHT SIDE */}
