@@ -1,7 +1,7 @@
 # FinanceDash
 
 ## Description
--This is a finance dashboard web app to view enterprise financial data (eventually in real time) using the MERN stack 
+-This is a finance dashboard web app to view enterprise financial data (eventually in real time) using the MERN stack and Linear Regression Machine Learning for Predictions using KPIs
 
 ## Citation
 -based on a tutorial by [EdRoh](https://www.youtube.com/@EdRohDev) on Youtube  
