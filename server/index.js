@@ -27,14 +27,16 @@ mongoose.connect(process.env.MONGO_URL, {
 }).catch((error) => console.log(`${error} did not connect`));
 */
 
-
-/*mongoose.connect(process.env.MONGO_URL, {
+/*
+mongoose.connect(process.env.MONGO_URL, {
+    useMongoClient: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(async() => {
     app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
 
 }).catch((error) => console.log(`${error} did not connect`));*/
+
 
 /*
 mongodb-js is connecting to database but i need mongoose for strict data modelling. 
