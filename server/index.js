@@ -5,7 +5,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import helmet from "helmet";
 import morgan from "morgan";
-import { MongoClient, ServerApiVersion } from "mongodb";
+import kpiRoutes from "./routes/kpi.js";
 
 
 /* CONFIG */
@@ -19,6 +19,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+/* ROUTES SETUP */
+app.use("/kpi", kpiRoutes);
+
 /* MONGOOSE SETUP*/
 const PORT = process.env.PORT || 9000;
 mongoose.Promise = global.Promise;
@@ -28,4 +31,3 @@ mongoose.connect(process.env.MONGO_URL, {
     app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
 
 }).catch((error) => console.log(`${error} did not connect`));
-
